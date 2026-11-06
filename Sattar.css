@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(214, 17%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 13px;
+}
+
+.Container {
+    width: 100%;
+    display: grid;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.Purple-team {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: auto auto;
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.purple-side,
+.black-side {
+    display: contents;
+}
+
+.purple,
+.grey,
+.white-A,
+.black,
+.kira {
+    display: grid;
+    /* flex-direction: column; */
+    gap: 12px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    min-width: 0;
+}
+
+.purple {
+    grid-column: span 2;
+}
+
+.grey {
+    grid-column: 3;
+}
+
+.white-A {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.black {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+}
+
+.kira {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+}
+
+.purple {
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+}
+
+.grey {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+}
+
+.white-A {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+}
+
+.black {
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 100%);
+}
+
+.daniel,
+.jonathan,
+.jeanette,
+.patrick,
+.kira-name {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.verified,
+.jonathan-graduate,
+.jeanette-graduate,
+.patrick-graduate,
+.kira-graduate {
+    margin: -8px 0 4px;
+    font-size: 11px;
+    opacity: 0.7;
+}
+
+h2 {
+    font-size: 20px;
+    /* font-weight: 600;
+    line-height: 1.2; */
+    width: 20px;
+}
+
+p {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+
+@media (max-width: 800px) {
+    .Container {
+        padding: 20px;
+    }
+
+    .Purple-team {
+        grid-template-columns: 1fr;
+    }
+
+    .purple,
+    .grey,
+    .white-A,
+    .black,
+    .kira {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.daniel {
+    color: white;
+}
+
+.jonathan-image {
+    border-radius: 10px;
+}
+
+
